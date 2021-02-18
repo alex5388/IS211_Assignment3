@@ -7,7 +7,7 @@ url = 'http://s3.amazonaws.com/cuny-is211-spring2015/weblog.csv'
 
 fileOpen = request.urlopen(url)
 readFile = fileOpen.read()
-decFile = readFile.decode('ascii').split(',')
+decFile = readFile.decode('ascii').split('\n')
 for line in decFile:
     print(line)
 
